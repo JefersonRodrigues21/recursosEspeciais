@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos especiais</title>
+
+    <STyle>
+        kbd {
+            border: solid 1px black;
+        }
+        code {
+            background-color: #f1f1f1;
+            color: blue;
+        }
+        pre {
+            background-color: #f1f1f1;
+            color: green;
+        }
+        pre > code {
+            color: red;
+        }
+        pre> p {
+            font-style: italic;
+            color: gray;
+            padding-left: 30px;
+        }
+    </STyle>
+
 </head>
 <body>
 
     <input list="browsers" type="search" name="search"/>
     <datalist id="browsers">
-        <option value="chrome">Google Chrome</option>
-        <option value="firefox">Mozila Firefox</option>
-        <option value="edge">Microsoft Edge</option>
-        <option value="safari">Safari</option>
-        <option value="opera">Opera</option>
+        <option>Google Chrome</option>
+        <option>Mozila Firefox</option>
+        <option>Microsoft Edge</option>
+        <option>Safari</option>
+        <option>Opera</option>
     </datalist>
 
     <hr>
@@ -25,5 +48,21 @@
         <option value="safari">Safari</option>
         <option value="opera">Opera</option>
     </select>
+
+    <p>Para copiar esta informação, pressione <kbd>CTRL</kbd> + <KBd>c</KBd>.</p>
+
+    <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code>.</p>
+
+    <p>Comando completo de altera cor de fundo:</p>
+    <pre>
+        <p>//Neste momento você aplica desta forma</p>
+        <code> 
+            code {
+                background-color: #f1f1f1;
+                color: red;
+            }
+        </code>
+    </pre>
+
 </body>
 </html>
