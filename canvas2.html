@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas outros exemplos</title>
+</head>
+
+<body>
+    <main>
+        <h1>Novos Atributos</h1>
+        <form method="get" action="" id="form"></form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">
+                    Name:
+                    <input form="form" type="text" id="name" name="name" autofocus
+                        required><!--required = obriga a preencher o campo-->
+                </label>
+
+                <label for="email">
+                    E-mail:
+                    <input form="form" placeholder="Ex: meuemail@gmail.com" type="text" id="email" name="email" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="address">
+                    Endereço:
+                    <input form="form" type="text" id="address" name="address">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea form="form" minlength="10" maxlength="150" name="observation" id="observation" cols="30" rows="5"></textarea>
+            </fieldset>
+
+            <button form="form" type="reset">Limpar</button>
+            <button form="form" type="submit">Enviar</button>
+        
+    </main>
+</body>
+
+</html>
